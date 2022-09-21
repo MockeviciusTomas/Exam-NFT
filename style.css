@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    padding-top: 50px;
+}
+.navbar {
+    text-align: right; width: 100%;
+}
+a {
+    padding: 25px 25px 25px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.pink {
+    color: rgb(238, 79, 105);
+}   
+
+
