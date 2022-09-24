@@ -216,3 +216,39 @@ main {
       padding: 2rem;
     }
   }
+
+  /* press start */
+
+  .press .logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  
+  .press .all-logo {
+    display: none;
+  }
+  
+  @media (min-width: 740px) {
+    .press .all-logo {
+      display: flex;
+      justify-content: space-between;
+    }
+    .press .logo {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 740px) and (max-width: 1000px) {
+    .press .all-logo {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .press .logo {
+      display: none;
+    }
+  }
