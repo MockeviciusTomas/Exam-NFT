@@ -1,129 +1,67 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
-    width: 80%;
     margin: 0 auto;
-}
-
-header {
-    position: absolute;
-    width: 1280px;
-    height: 36px;
-    left: 80px;
-    top: 70px;
-}
-
-.navbar {
+    padding: 2rem;
+    font-family: "Inter", sans-serif;
+    line-height: 140%;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+  }
+  
+  @media (min-width: 740px) {
+    body {
+      padding: 4rem;
+    }
+  }
+  .header-wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    gap: 28px;
-}
-
-a {
-    padding: 25px 25px 25px 25px;
+    width: 100%;
+    height: 36px;
+  }
+  
+  .logo {
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
     text-decoration: none;
+    margin-left: 1.5rem;
     font-size: 20px;
     color: black;
-}
-
-.main-logo {
-    position: absolute;
-    width: 198px;
-    height: 36px;
-    left: 80px;
-    top: 0;
-}
-
-.features,
-.about,
-.launch {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    color: #555555;
-}
-
-.sign-up {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 100%;
-    color: #FF3998;
-}
-
-.hero-section {
-    position: absolute;
-    width: 1120px;
-    height: 519px;
-    left: 80px;
-    top: 288px;
-}
-
-img.NFT {
-    position: absolute;
-    width: 354px;
-    height: 519px;
-    left: 846px;
-    top: 288px;
-}
-
-.hero-content {
-    position: absolute;
-    width: 620px;
-    height: 483px;
-    left: 80px;
-    top: 306px;
-}
-
-.launching-soon {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FF3998;
-}
-
-.hero-title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 116px;
-    color: #111111;
-}
-
-.hero-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-}
-
-.cta-border {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-}
-
-.cta-text {
-    position: absolute;
-    width: 188px;
-    height: 75px;
-    left: 80px;
-    top: 500px;
-}
+  }
+  
+  a:nth-last-child(1) {
+    color: rgb(212, 93, 113);
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  .burg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 26px;
+    width: 28px;
+    background-color: white;
+  }
+  
+  .burg-line {
+    background-color: #181717;
+    height: 3px;
+    border-radius: 4px;
+  }
+  
+  @media (min-width: 740px) {
+    nav {
+      display: flex;
+    }
+    .burg {
+      display: none;
+    }
+  }
