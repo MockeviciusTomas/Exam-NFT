@@ -67,3 +67,108 @@ nav {
         display: none;
     }
 }
+
+/* hero start */
+
+main {
+    margin-top: 2rem;
+}
+
+.hero {
+    margin-top: 5rem;
+}
+
+.hero-wrapper .nft {
+    display: flex;
+    width: 38rem;
+    float: right;
+    margin-right: -27rem;
+    position: relative;
+    /* z-index: -1; */
+    top: -9rem;
+    left: -9rem;
+}
+
+.hero-wrapper img {
+    width: 100%;
+}
+
+.launchin-soon {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #eb1d80;
+}
+
+.main-message {
+    font-weight: bolder;
+    font-size: 54px;
+    line-height: 58px;
+    color: black;
+}
+
+.hero .hero-wrapper p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: black;
+}
+
+.cta-btn {
+    margin-top: 1rem;
+    width: 190px;
+    height: 80px;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(45deg, pink, darkred, orange, green) border-box;
+    border: 5px solid transparent;
+    border-radius: 45px;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 140%;
+    color: black;
+}
+
+@media (min-width: 1260px) {
+    .hero-wrapper .nft {
+        display: flex;
+        width: 45rem;
+        float: right;
+        margin-right: 7rem;
+        /* position: relative;
+        z-index: -1; */
+        top: -6rem;
+        left: 8rem;
+    }
+
+    .main-message {
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 116px;
+        /* margin: 0px; */
+        color: black;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero .hero-wrapper p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .main-message {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        /* margin: 0px; */
+        color: black;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+}
