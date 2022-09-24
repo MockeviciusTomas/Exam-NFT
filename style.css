@@ -180,46 +180,47 @@ main {
     background: linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #FF3998, #FF3939, #FF8139, #39FFA0) border-box;
     border: solid transparent;
     border-radius: 1rem;
-  }
-  
-  .upsell-wrapper {
+}
+
+.upsell-wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 5rem;
-  }
-  
-  .upsell-wrapper h1 {
+}
+
+.upsell-wrapper h1 {
     line-height: 48px;
     color: black;
     font-weight: 600;
     font-size: 40px;
-  }
-  
-  .upsell-wrapper p {
+}
+
+.upsell-wrapper p {
     color: black;
-  }
-  
-  @media (min-width: 1300px) {
+}
+
+@media (min-width: 1300px) {
     .upsell {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      margin-left: 0rem;
-      margin-right: 0rem;
-      background: linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #FF3998, #FF3939, #FF8139, #39FFA0) border-box;
-      border: solid transparent;
-      border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        background: linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #FF3998, #FF3939, #FF8139, #39FFA0) border-box;
+        border: solid transparent;
+        border-radius: 1rem;
     }
+
     .upsell-wrapper {
-      padding: 2rem;
+        padding: 2rem;
     }
-  }
+}
 
-  /* press start */
+/* press start */
 
-  .press .logo {
+.press .logo {
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
@@ -227,28 +228,138 @@ main {
     align-items: center;
     gap: 1rem;
     margin-bottom: 4rem;
-  }
-  
-  .press .all-logo {
+}
+
+.press .all-logo {
     display: none;
-  }
-  
-  @media (min-width: 740px) {
+}
+
+@media (min-width: 740px) {
     .press .all-logo {
-      display: flex;
-      justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
+
     .press .logo {
-      display: none;
+        display: none;
     }
-  }
-  @media screen and (min-width: 740px) and (max-width: 1000px) {
+}
+
+@media screen and (min-width: 740px) and (max-width: 1000px) {
     .press .all-logo {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
+
     .press .logo {
-      display: none;
+        display: none;
     }
-  }
+}
+
+/* showcase start */
+
+.showcase {
+    margin-top: 4rem;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.opensea {
+    text-decoration-line: underline;
+}
+
+.showcase .showcase-wrapper h3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: black;
+}
+
+.showcase-center {
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    overflow-x: auto;
+}
+
+.showcase-card {
+    width: 290px;
+    height: 400px;
+    margin-right: 4rem;
+    transition: 0.3s linear;
+    border-radius: 1rem;
+    background-color: lightgray;
+    color: gray;
+}
+
+.img-container,
+.showcase-img {
+    width: 100%;
+}
+
+.showcase-footer {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    padding: 0 1.5rem;
+}
+
+.showcase-footer p {
+    margin: 0.3rem 0;
+}
+
+.showcase-footer span {
+    color: orange;
+}
+
+.showcase-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.showcase-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: right;
+}
+
+.showcase-footer div :nth-child(1) {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.showcase-footer div :nth-child(2) {
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.showcase-footer div :nth-child(3) {
+    font-weight: 400;
+    font-size: 18px;
+    color: gray;
+}
+
+@media (min-width: 1500px) {
+    .showcase-center {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .showcase-card {
+        width: 290px;
+        height: 400px;
+        border-radius: 1rem;
+        background-color: lightgray;
+        color: gray;
+    }
+}
