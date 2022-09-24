@@ -76,6 +76,7 @@ main {
 
 .hero {
     margin-top: 5rem;
+    margin-bottom: 4rem;
 }
 
 .hero-wrapper .nft {
@@ -130,7 +131,7 @@ main {
     color: black;
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1300px) {
     .hero-wrapper .nft {
         display: flex;
         width: 45rem;
@@ -167,3 +168,51 @@ main {
         margin-bottom: 2rem;
     }
 }
+
+/* upsell start */
+
+.upsell {
+    height: 16rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #FF3998, #FF3939, #FF8139, #39FFA0) border-box;
+    border: solid transparent;
+    border-radius: 1rem;
+  }
+  
+  .upsell-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5rem;
+  }
+  
+  .upsell-wrapper h1 {
+    line-height: 48px;
+    color: black;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  
+  .upsell-wrapper p {
+    color: black;
+  }
+  
+  @media (min-width: 1300px) {
+    .upsell {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      background: linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #FF3998, #FF3939, #FF8139, #39FFA0) border-box;
+      border: solid transparent;
+      border-radius: 1rem;
+    }
+    .upsell-wrapper {
+      padding: 2rem;
+    }
+  }
