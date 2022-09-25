@@ -28,7 +28,7 @@ body {
     padding: 0;
 }
 
-a {
+nav a {
     text-decoration: none;
     margin-left: 1.5rem;
     font-size: 20px;
@@ -409,5 +409,103 @@ h2 {
         float: right;
         margin-right: 19rem;
         position: relative;
+    }
+}
+
+/* footer start */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons a {
+    margin: 0 0.5rem;
+    color: lightgray;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+}
+
+li {
+    font-weight: 400;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.footer-left ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-right ul :nth-child(1) {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.footer-bottom.all {
+    display: none;
+}
+
+.footer-bottom p {
+    color: lightgray;
+}
+
+@media (min-width: 940px) {
+    .footer-conatainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-right {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 4rem;
+    }
+
+    .footer-bottom.all {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .footer-bottom {
+        display: none;
     }
 }
